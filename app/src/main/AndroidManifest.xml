@@ -17,9 +17,6 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
-        <activity
-            android:name=".ChangePassword"
-            android:screenOrientation="portrait"></activity>
         <activity android:name=".register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -116,6 +113,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="app.infiniverse.grocery.HomeActivity" />
         </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ChangeClientDetail"
             android:screenOrientation="portrait" />
