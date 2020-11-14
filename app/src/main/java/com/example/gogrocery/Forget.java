@@ -1,5 +1,7 @@
 package com.example.gogrocery;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
@@ -23,9 +25,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-
-import app.infiniverse.grocery.OtpForgetActivity;
-import app.infiniverse.grocery.R;
 
 public class ForgetActivity extends AppCompatActivity {
 
@@ -55,14 +54,14 @@ public class ForgetActivity extends AppCompatActivity {
                         if (s.trim().equals("SENT")) {
 
 
-                            Intent i = new Intent(com.example.gogrocery.ForgetActivity.this, OtpForgetActivity.class);
+                            Intent i = new Intent(ForgetActivity.this, OtpForgetActivity.class);
                             i.putExtra("email",email.getText().toString());
                             startActivity(i);
-                            Toast.makeText(com.example.gogrocery.ForgetActivity.this, "OTP sent successfully, check your Email", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ForgetActivity.this, "OTP sent successfully, check your Email", Toast.LENGTH_SHORT).show();
                             finish();
 
                         } else
-                            Toast.makeText(com.example.gogrocery.ForgetActivity.this, "Invalid Email", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ForgetActivity.this, "Invalid Email", Toast.LENGTH_SHORT).show();
 
                     }
 
@@ -106,4 +105,3 @@ public class ForgetActivity extends AppCompatActivity {
 
     }
 }
-
