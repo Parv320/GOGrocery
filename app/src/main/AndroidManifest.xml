@@ -17,6 +17,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
+        <activity android:name="com.example.gogrocery.ProfileActivity" />
         <activity android:name=".register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
