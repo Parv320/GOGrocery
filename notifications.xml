@@ -1,6 +1,8 @@
 <application>
   <component name="NotificationConfiguration">
     <notification groupId="Build sync orphan modules" displayType="NONE" shouldLog="false" />
+    <notification groupId="Dump Threads Group" />
     <notification groupId="Gradle Notification Group" displayType="NONE" shouldLog="false" />
+    <notification groupId="Plugins updates" displayType="STICKY_BALLOON" />
   </component>
 </application>
